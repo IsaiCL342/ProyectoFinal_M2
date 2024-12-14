@@ -4,15 +4,20 @@
 }
 
 body{
-    font-family:'Lucida Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: rgb(30, 1, 57);
 }
 
+.navbar h1{
+    color: rgb(253, 253, 253);
+}
+/*NAV BAR*/
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: bisque;
+    background-image: url(images/geek.PNG);
 }
 
 .nav-links{
@@ -28,12 +33,13 @@ body{
 }
 
 .nav-links li a{
-    color:black; /*Cambiar color de enlaces*/
+    color:aliceblue; /*Cambiar color de enlaces*/
     text-decoration: none; /*Quitar subrayado*/
 }
 
+/*HERO*/
 .hero{
-    background-image: url(/images/tipos-de-cafe-small-16_9.jpg);
+    background-image: url(/images/b514f2e3e4e0b1cbfba3fb3ee41be65fdoble.JPG);
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -52,37 +58,61 @@ body{
     margin-bottom: 20px;
 }
 
+/*MENU - PRODUCTOS*/
 .featured-products{
     padding: 50px;
     text-align: center;
 }
 
 .featured-products h2{
-    background-color: bisque;
+    background-color: rgb(102, 4, 187);
+    color: aliceblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.product-list{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-color: antiquewhite;
+.grid-product{
+    padding: 20px;
+    background-color: rgb(217, 215, 250);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 260px);
+    gap: 20px;
+    grid-template-areas:
+    "product1 product2 product3"
+    "product1 product4 product5"
+    "product6 product7 product7";
+    border: 4px solid transparent;
+    animation: animacion-borde 2s infinite;
 }
 
 .product{
-    width: 300px;
-    margin-bottom: 30px;
-    background-color: rgb(231, 178, 140);
+    background-color: rgb(171, 113, 222);
     border-radius: 10px;
-    margin-top: 30px;
+    color: aliceblue;
+    border: 4px solid transparent;
+    animation: animacion-borde 2s infinite;
 }
 
 .product img{
-    width: 200px;
-    height: 200px;
+    width: 90%;
+    height: 60%;
     object-fit: cover;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
     border-radius: 10px;
+}
+
+
+.product button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-family:'Lucida Sans', sans-serif;
+    background-color: rgb(102, 4, 187);
+    color: aliceblue;;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /*Seccion de postres*/
@@ -100,6 +130,7 @@ body{
 /*Seccion de personal*/
 .equipo{
     background-color: antiquewhite;
+    
 }
 .equipo-container{
     display: flex;
@@ -122,15 +153,6 @@ footer{
     color: antiquewhite;
     text-align: center;
     padding: 10px 0;
-}
-
-button{
-    width: 80px;
-    height: 30px;
-    border-radius: 10px;
-    font-family:'Lucida Sans', sans-serif;
-    background-color: antiquewhite;
-    color: brown;
 }
 
 /*Seccion de sandwiches*/
@@ -166,3 +188,17 @@ button{
 .sandwich:nth-child(3) {grid-area: sandwich3;}
 .sandwich:nth-child(4) {grid-area: sandwichPollo;}
 .sandwich:nth-child(5) {grid-area: sandwich5;}
+
+.product:nth-child(1) {grid-area: product1;}
+.product:nth-child(2) {grid-area: product2;}
+.product:nth-child(3) {grid-area: product3;}
+.product:nth-child(4) {grid-area: product4;}
+.product:nth-child(5) {grid-area: product5;}
+.product:nth-child(6) {grid-area: product6;}
+.product:nth-child(7) {grid-area: product7;}
+
+@keyframes animacion-borde {
+    0% { border-color: rgb(222, 164, 249); }
+    50% { border-color: rgb(192, 64, 252) }
+    100% { border-color: rgb(222, 164, 249); }
+}

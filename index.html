@@ -4,89 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Doto:wght@100..900&family=Ga+Maamli&family=Geist+Mono:wght@100..900&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
     <title>Mi Cafetería</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <h1>Compu Cofee</h1>
+                <h1>Cofee Geek</h1>
             </div>
             <ul class="nav-links">
-                <li> <a href="#">Inicio</a></li>
-                <li> <a href="#" onclick="redirigir('menu.html')">Menú</a></li>
-                <li> <a href="#">Nosotros</a></li>
-                <li> <a href="#">Contacto</a></li>
+                <li> <a href="#inicio">Inicio</a></li>
+                <li> <a href="#menu">Menú</a></li>
+                <li> <a href="#equipo">Nosotros</a></li>
+                <li> <a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
+    <section id="inicio" class="hero">
         <div class="hero-content">
-            <h2>El mejor café de la ciudad</h2>
-            <p>Disfruta de una experiencia única con nuestros granos seleccionados.</p>
-            <button>Ver Menú</button>
+            <h2>Donde el café es más épico que un final boss.</h2>
+            <p>Disfruta de una experiencia única en nuestra cafeteria.</p>
         </div>
     </section>
 
-    <section class="featured-products">
-        <h2>Nuestros productos destacados</h2>
-        <h3>Cafes</h3>
-        <div class="product-list">
+    <section id="menu" class="featured-products">
+        <h2>Menu</h2>
+
+        <div class="grid-product">
+            
             <div class="product">
-                <img src="images/840_560.jpeg" alt="Café 1">
-                <h3>Café Americano</h3>
+                <img src="images/tipos-de-cafe-small-16_9.jpg" alt="Café 1">
+                <h3>Cafés</h3>
                 <p>Un clásico para comenzar el día.</p>
+                <button>Ver Opciones</button>
             </div>
+            
             <div class="product">
-                <img src="images/cappuccino-2_1200x.webp" alt="Café 2">
-                <h3>Cappuccino</h3>
-                <p>Espresso con leche cremosa.</p>
+                <img src="images/cold-brew.webp" alt="Café 2">
+                <h3>Te</h3>
+                <!--<p>Un clásico para comenzar el día.</p>-->
+                <button>Ver Opciones</button>
             </div>
+
             <div class="product">
-                <img src="images/images.jpg" alt="Café 3">
-                <h3>Latte Macchiato</h3>
-                <p>Espresso con leche al vapor.</p>
+                <img src="images/Frappe-06.webp" alt="Café 3">
+                <h3>Bebidas Frias</h3>
+                <!--<p>Un clásico para comenzar el día.</p>-->
+                <button>Ver Opciones</button>
             </div>
+
+            <div class="product">
+                <img src="images/FULL-MUFFINS.webp" alt="Café 3">
+                <h3>Postres</h3>
+                <!--<p>Un clásico para comenzar el día.</p>-->
+                <button>Ver Opciones</button>
+            </div>
+
+            <div class="product">
+                <img src="images/Crepa.jpg" alt="Café 3">
+                <h3>Snacks</h3>
+                <!--<p>Un clásico para comenzar el día.</p>-->
+                <button>Ver Opciones</button>
+            </div>
+
+            <div class="product">
+                <img src="images/2024-spotify-brand-assets-media-kit.jpg" alt="Café 3">
+                <h3>¿Quieres oir tu musica?</h3>
+                <p>Recuerda que puedes agregar tus canciones favoritas a la playlist de la cafeteria.</p>
+
+            </div>
+
+            <div class="product">
+                <img src="images/wifi-fondo-azul.png" alt="Café 3">
+                <h3>¿Quieres oir tu musica?</h3>
+                <p>Recuerda que puedes agregar tus canciones favoritas a la playlist de la cafeteria.</p>
+            </div>
+
         </div>
-        <h3>Frapes</h3>
-        <div class="product-list">
-            <div class="product">
-                <img src="images/images (1).jpg" alt="Café 1">
-                <h3>Frape Oreo</h3>
-                <p>Un clásico para comenzar el día.</p>
-            </div>
-            <div class="product">
-                <img src="images/copycat-frappuccino-recipe.jpg" alt="Café 2">
-                <h3>Frappuccino</h3>
-                <p>Espresso con leche cremosa.</p>
-            </div>
-            <div class="product">
-                <img src="images/12137.jpg" alt="Café 3">
-                <h3>Frape Moka</h3>
-                <p>Espresso con leche al vapor.</p>
-            </div>
-        </div>
-        <h3>Postres</h3>
-        <div class="product-list">
-            <div class="product">
-                <img src="images/descarga (3).jpg" alt="Café 1">
-                <h3>Crepas</h3>
-                <p>Un clásico para comenzar el día.</p>
-            </div>
-            <div class="product">
-                <img src="images/cappuccino-2_1200x.webp" alt="Café 2">
-                <h3>Pays</h3>
-                <p>Espresso con leche cremosa.</p>
-            </div>
-            <div class="product">
-                <img src="images/images.jpg" alt="Café 3">
-                <h3>Cupcakes</h3>
-                <p>Espresso con leche al vapor.</p>
-            </div>
-        </div>
-    </section>
 
     <section class="postres">
         <h2>Nuestros Deliciosos Postres</h2>
@@ -135,7 +137,7 @@
         </div>
     </section>
 
-    <section class="equipo">
+    <section id="equipo" class="equipo">
         <h2>Nuestro Equipo</h2>
 
         <div class="equipo-container">
@@ -168,7 +170,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer id="contacto">
         <div class="footer-container">
             <div class="social-media">
                 <a href="#"><i class="fab fa-facebook"></i></a>
