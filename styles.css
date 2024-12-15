@@ -92,6 +92,11 @@ body{
     color: aliceblue;
     border: 4px solid transparent;
     animation: animacion-borde 2s infinite;
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.product:hover {
+    transform: scale(1.1); /* Aumenta el tamaño un 20% */
 }
 
 .product img{
@@ -105,7 +110,7 @@ body{
 
 
 .product button{
-    width: 100px;
+    width: 120px;
     height: 30px;
     border-radius: 10px;
     font-family:'Lucida Sans', sans-serif;
@@ -113,23 +118,59 @@ body{
     color: aliceblue;;
     margin-top: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #007bff; /* Azul más oscuro al pasar el cursor */
 }
 
 /*Seccion de postres*/
+
+.postres{
+    padding: 50px;
+    text-align: center;  
+}
+
+.postres h2{
+    background-color: rgb(102, 4, 187);
+    color: aliceblue;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+
 .grid-container{
-    display: grid;
+    /*display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); /*Responsive*/
-    gap: 30px; /*espaciado*/
+    /*gap: 30px;*/
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 20px;
+    background-color: rgb(217, 215, 250);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 260px);
+    gap: 20px;
+    grid-template-areas:
+    "postre1 postre2"
+    "postre3 postre4"
+    "postre5 postre6"
+    "postre7 postre8";
+    border: 4px solid transparent;
+    animation: animacion-borde 2s infinite;
 }
 
 .postre img{
     width: 100%;
     height: 200px;
     object-fit: cover;
+    border-radius: 10px;
+
 }
 /*Seccion de personal*/
 .equipo{
-    background-color: antiquewhite;
+    background-color: rgb(217, 215, 250);
     
 }
 .equipo-container{
@@ -149,8 +190,8 @@ body{
 }
 
 footer{
-    background-color: rgb(254, 166, 99);
-    color: antiquewhite;
+    background-color: rgb(102, 4, 187);
+    color: aliceblue;
     text-align: center;
     padding: 10px 0;
 }
@@ -196,6 +237,15 @@ footer{
 .product:nth-child(5) {grid-area: product5;}
 .product:nth-child(6) {grid-area: product6;}
 .product:nth-child(7) {grid-area: product7;}
+
+.postre:nth-child(1) {grid-area: postre1;}
+.postre:nth-child(2) {grid-area: postre2;}
+.postre:nth-child(3) {grid-area: postre3;}
+.postre:nth-child(4) {grid-area: postre4;}
+.postre:nth-child(5) {grid-area: postre5;}
+.postre:nth-child(6) {grid-area: postre6;}
+.postre:nth-child(7) {grid-area: postre7;}
+.postre:nth-child(8) {grid-area: postre8;}
 
 @keyframes animacion-borde {
     0% { border-color: rgb(222, 164, 249); }
