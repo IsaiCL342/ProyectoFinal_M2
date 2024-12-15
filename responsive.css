@@ -1,4 +1,5 @@
 @media screen and (max-width: 768px) {
+    /*navbar*/
     .navbar{
         flex-direction: column;
         align-items: flex-start;
@@ -15,6 +16,121 @@
     }
 
     .hero h2{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
+
+    .hero p{
+        font-size: .9rem;
+    }
+
+    /*MENU - PRODUCTOS*/
+.featured-products{
+    padding: 25px;
+    text-align: center;
+}
+
+.featured-products h2{
+    font-size: 1em;
+}
+
+.grid-product{
+    padding: 10px;
+    background-color: rgb(217, 215, 250);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 130px);
+    gap: 10px;
+    grid-template-areas:
+    "product1 product2 product3"
+    "product1 product4 product5"
+    "product6 product7 product7";
+    border: 4px solid transparent;
+    animation: animacion-borde 2s infinite;
+}
+
+.product{
+    background-color: rgb(171, 113, 222);
+    border-radius: 10px;
+    color: aliceblue;
+    border: 4px solid transparent;
+    animation: animacion-borde 2s infinite;
+    transition: transform 0.3s ease; /* Transición suave */
+    font-size: 10px;
+}
+
+.product:hover {
+    transform: scale(1.1); /* Aumenta el tamaño un 20% */
+}
+
+.product img{
+    width: 90%;
+    height: 60%;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+#bye p{
+    display: none;
+}
+.product button{
+    width: 90px;
+    height: 15px;
+    border-radius: 10px;
+    font-family:"Josefin Sans", sans-serif;
+    font-size: 8px;
+    background-color: rgb(102, 4, 187);
+    color: aliceblue;;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #007bff; /* Azul más oscuro al pasar el cursor */
+}
+
+
+@keyframes animacion-borde {
+    0% { border-color: rgb(222, 164, 249); }
+    50% { border-color: rgb(192, 64, 252) }
+    100% { border-color: rgb(222, 164, 249); }
+}
+
+/*Seccion de personal*/
+.equipo{
+    background-color: rgb(217, 215, 250);
+    
+}
+
+.equipo h2{
+    font-size: 1em;
+}
+.equipo-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.miembro{
+    width: 200px;
+    margin-bottom: 35px;
+    font-size: 13px;
+}
+.miembro img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+footer{
+    background-color: rgb(102, 4, 187);
+    color: aliceblue;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 13px;
+}
+
 }

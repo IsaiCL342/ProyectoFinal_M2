@@ -110,10 +110,10 @@ body{
 
 
 .product button{
-    width: 120px;
+    width: 150px;
     height: 30px;
     border-radius: 10px;
-    font-family:'Lucida Sans', sans-serif;
+    font-family:"Josefin Sans", sans-serif;
     background-color: rgb(102, 4, 187);
     color: aliceblue;;
     margin-top: 10px;
@@ -126,7 +126,7 @@ body{
     background-color: #007bff; /* Azul más oscuro al pasar el cursor */
 }
 
-/*Seccion de postres*/
+/*Seccion de menu*/
 
 .postres{
     padding: 50px;
@@ -146,17 +146,18 @@ body{
     /*gap: 30px;*/
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    padding: 20px;
+    padding:20px;
     background-color: rgb(217, 215, 250);
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 260px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 260px);
     gap: 20px;
     grid-template-areas:
-    "postre1 postre2"
-    "postre3 postre4"
-    "postre5 postre6"
-    "postre7 postre8";
+    "postre1 postre2 postre3"
+    "postre4 postre5 postre6"
+    "postre7 postre8 postre9"
+    "postre10 postre11 postre12"
+    "postre13 postre14 postre15";
     border: 4px solid transparent;
     animation: animacion-borde 2s infinite;
 }
@@ -171,16 +172,25 @@ body{
 /*Seccion de personal*/
 .equipo{
     background-color: rgb(217, 215, 250);
-    
+    text-align: center;
 }
+
+.equipo h2{
+    background-color: rgb(102, 4, 187);
+    color: aliceblue;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .equipo-container{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding-top: 20px;
 }
 .miembro{
     width: 200px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 .miembro img{
     width: 150px;
@@ -246,6 +256,13 @@ footer{
 .postre:nth-child(6) {grid-area: postre6;}
 .postre:nth-child(7) {grid-area: postre7;}
 .postre:nth-child(8) {grid-area: postre8;}
+.postre:nth-child(9) {grid-area: postre9;}
+.postre:nth-child(10) {grid-area: postre10;}
+.postre:nth-child(11) {grid-area: postre11;}
+.postre:nth-child(12) {grid-area: postre12;}
+.postre:nth-child(13) {grid-area: postre13;}
+.postre:nth-child(14) {grid-area: postre14;}
+.postre:nth-child(15) {grid-area: postre15}
 
 @keyframes animacion-borde {
     0% { border-color: rgb(222, 164, 249); }
