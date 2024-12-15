@@ -133,4 +133,53 @@ footer{
     font-size: 13px;
 }
 
+/*Seccion de menu*/
+
+.postres{
+    padding: 25px;
+    text-align: center;  
+}
+
+.postres h2{
+    background-color: rgb(102, 4, 187);
+    color: aliceblue;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    font-size: 1em;
+}
+
+.grid-container{
+    /*display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); /*Responsive*/
+    /*gap: 30px;*/
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding:5px;
+    background-color: rgb(217, 215, 250);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 130px);
+    gap: 10px;
+    grid-template-areas:
+    "postre1 postre2 postre3"
+    "postre4 postre5 postre6"
+    "postre7 postre8 postre9"
+    "postre10 postre11 postre12"
+    "postre13 postre14 postre15";
+    border: 4px solid transparent;
+    animation: animacion-borde 2s infinite;
+}
+
+.postre img{
+    width: 80%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+
+.postre{
+    font-size: 10px;
+}
+
 }
