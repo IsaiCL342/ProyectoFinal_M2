@@ -17,7 +17,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-image: url(images/gaming_article.jpg);
+    background-image: url(images/geek.PNG);
 }
 
 .nav-links{
@@ -39,7 +39,7 @@ body{
 
 /*HERO*/
 .hero{
-    background-image: url(/images/Frappe-07.PNG);
+    background-image: url(/images/gaming_article.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
